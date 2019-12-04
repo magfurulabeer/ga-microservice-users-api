@@ -819,3 +819,22 @@ insert into users (id, email, password, profile_id, username) values (null, ?, ?
 2019-12-04 17:52:54.179  INFO 40 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-04 17:57:53.844  INFO 40 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-04 18:07:55.860  INFO 40 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 18:16:56.159  INFO 40 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-04 18:20:42.675  INFO 40 --- [Thread-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS with eureka with status DOWN
+2019-12-04 18:20:42.696  WARN 40 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1575483642695, current=DOWN, previous=UP]
+2019-12-04 18:20:42.708  INFO 40 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS/3d0a9c8a2a3c:users:8081: registering service...
+2019-12-04 18:20:42.920  INFO 40 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-04 18:20:43.226  INFO 40 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS/3d0a9c8a2a3c:users:8081 - registration status: 204
+2019-12-04 18:20:43.230  INFO 40 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-04 18:20:43.455  INFO 40 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2019-12-04 18:20:46.460  INFO 40 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2019-12-04 18:20:46.637  INFO 40 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS/3d0a9c8a2a3c:users:8081 - deregister  status: 200
+2019-12-04 18:20:46.809  INFO 40 --- [Thread-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2019-12-04 18:20:46.814  INFO 40 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-04 18:20:46.945  INFO 40 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-04 18:20:53.345  INFO 40 --- [restartedMain] c.example.usersapi.UsersApiApplication   : The following profiles are active: dev
+2019-12-04 18:21:00.874  INFO 40 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-04 18:21:01.288  INFO 40 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 409ms. Found 3 repository interfaces.
+2019-12-04 18:21:01.917  INFO 40 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6f3099f3-6e6c-3dc8-a9d5-2e2bf437a0bc
+2019-12-04 18:21:02.107  INFO 40 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5adbf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-04 18:21:02.130  INFO 40 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c74def2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
